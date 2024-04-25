@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cd6961;
+    font-size: large;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 5px;
+    display: block;
+    
+}
+
+.content {
+    background-color: #c2e5f9;
+    max-width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    width: 630px;
+    border: 2px solid white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 100px;
+}
+
+input {
+    border-radius: 3px;
+    border: 0px;
+    background-color: #c2e5f9;
+    color: #f99e8c;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    background-color: #f99e8c;
+    color: #c2e5f9;
+    border-color: white;
+    box-shadow: none;
+    border-radius: 7px;
+    width: 80px;
+    margin-top: 20px;
+    padding: 3px;
+
+}
+
+.input, #result, #caraHitung {
+    border: 2px solid white;
+    border-radius: 7px;
+    width: 255px;
+    height: 35px;
+    padding: 5px;
+}
+
+::placeholder {
+    color: #f99e8c;
+    opacity: 40%; 
+    font-size: medium;
+}
+
+.tutor {
+    max-width: 100%;
+    margin: 3px;
+    border-radius: 7px;
+    border-color: white;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 300px;
+}
+
+.paragraf {
+    margin: 0%;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.CF, .FC {
+    max-width: 100%;
+    margin: 3px;
+    border-radius: 7px;
+    border-color: white;
+    position: absolute;
+    right: 0px;
+    top: 220px;
+}
+
+fieldset > p {
+    font-size: small;
+    padding: 3px;
+    margin: 0px;
+}
+
+sub, em {
+    font-size: small;
+}
+
+legend {
+    font-size: medium;
+}

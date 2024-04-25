@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
+    <title>Kalkulator Suhu</title>
+</head>
+<body style="background-image: url(./assets/weather.jpg); background-size: cover;">
+    <div class="content">
+        <header>
+            <h3>Kalkulator Suhu</h3>
+        </header>
+        <p>Temperature in °C/°F</p>
+        <div class="input">
+            <input type="number" id="inputTemp" placeholder="Input Number"/>
+            <p id="invalid"></p>
+        </div>
+        <div>
+            <fieldset class="tutor">
+                <legend>How to Use "Kalkulator Suhu"</legend>
+                <p class="paragraf">
+                    1. Input a number at “Input Number”</p>  
+                <p class="paragraf">
+                    2. Click "To °C" to convert to Celsius</p> 
+                <p class="paragraf">
+                    3. Click "To °F" to convert to Fahrenheit</p>   
+                <p class="paragraf">
+                    4. Click "Reset" to clear the conversion result</p>
+                
+            </fieldset>
+        </div>
+        <div class="formula">
+            <fieldset class="CF" id="CF">
+                <legend>How to Convert Celcius to Fahrenheit</legend>
+                <p>S<sub>(°F)</sub> = (S<sub>(&deg;C)</sub> × (9/5) + 32)</p>
+                <p><em>or</em></p>
+                <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 1.8) + 32</p>
+            </fieldset>
+            <fieldset class="FC" id="FC">
+                <legend>How to Convert Fahrenheit to Celcius</legend>
+                <p>S<sub>(&deg;C)</sub> = ((S<sub>(&deg;F)</sub> - 32) × 5/9)</p>
+                <p><em>or</em></p>
+                <p>S<sub>(&deg;C)</sub> = ((S<sub>(&deg;F)</sub> - 32) × 0.55556)</p>
+            </fieldset>
+        </div> 
+        <br>
+        <button onclick="convertToCelsius()" id="convertToCelsius">To °C</button>
+        <button onclick="convertToFahrenheit()" id="convertToFahrenheit">To °F</button>
+        <button onclick="reset()">Reset</button>
+        <br>
+        <p>Convert Result</p>
+        <div id="result"></div>
+        <p>Calculation Step</p>
+        <div id="caraHitung">
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
