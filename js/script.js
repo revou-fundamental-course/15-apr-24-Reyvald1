@@ -1,7 +1,8 @@
-// meneyembunyikan konten
+// menyembunyikan konten
 document.getElementById('CF').style.display='none'
 document.getElementById('FC').style.display='none'
 
+// konversi Celcius ke Fahrenheit
 function convertToFahrenheit() {
     const inputTemp = parseFloat(document.getElementById("inputTemp").value);
     if (!isNaN(inputTemp)) {
@@ -21,6 +22,7 @@ function convertToFahrenheit() {
     }
 }
 
+// konversi Fahrenheit ke Celcius
 function convertToCelsius() {
     const inputTemp = parseFloat(document.getElementById("inputTemp").value);
     if (!isNaN(inputTemp)) {

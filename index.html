@@ -7,16 +7,19 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
     <title>Kalkulator Suhu</title>
 </head>
+<!-- Konten -->
 <body style="background-image: url(./assets/weather.jpg); background-size: cover;">
     <div class="content">
         <header>
             <h3>Temperature Converter by Reyvaldi</h3>
         </header>
         <p>Temperature in °C/°F</p>
+        <!--Input Nilai-->
         <div class="input">
             <input type="number" id="inputTemp" placeholder="Input Number"/>
             <p id="invalid"></p>
         </div>
+        <!--Petunjuk Penggunaan-->
         <div>
             <fieldset class="tutor">
                 <legend>How to Use "Kalkulator Suhu"</legend>
@@ -28,9 +31,9 @@
                     3. Click "To °F" to convert to Fahrenheit</p>   
                 <p class="paragraf">
                     4. Click "Reset" to clear the conversion result</p>
-                
             </fieldset>
         </div>
+        <!--Cara Perhitungan-->
         <div class="formula">
             <fieldset class="CF" id="CF">
                 <legend>How to Convert Celcius to Fahrenheit</legend>
@@ -46,9 +49,12 @@
             </fieldset>
         </div> 
         <br>
+        <!--Tombol-->
+        <div>
         <button onclick="convertToCelsius()" id="convertToCelsius">To °C</button>
         <button onclick="convertToFahrenheit()" id="convertToFahrenheit">To °F</button>
         <button onclick="reset()">Reset</button>
+        </div>
         <br>
         <p>Convert Result</p>
         <div id="result"></div>
